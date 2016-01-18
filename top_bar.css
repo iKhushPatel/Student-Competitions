@@ -1,0 +1,129 @@
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    color: #565C68;
+}
+a {
+    color: #21C0E8;
+	text-decoration: none;
+}
+.topbar.fixed {
+    position: fixed;
+    top: 0px;
+    border-bottom: 0px none;
+}
+.topbar {
+    background: #2E363F;
+    height: 55px;
+    border-bottom: 8px solid #45515E;
+    width: 100%;
+    z-index: 1001;
+}
+a:focus, a:hover {
+    color: #128CAB;
+    text-decoration: underline;
+}
+.city-select-button {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    padding: 6px 10px;
+	padding-bottom: 17px ;
+    margin-bottom: -10px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 12px;
+    max-width: 215px;
+}
+.logo-span[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 50px;
+}
+.pull-right[class*="span"] {
+    float: right;
+}
+#searchd-input {
+    height: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5) inset;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+input[type="text"]{
+    background-color: #FFF;
+}
+.bluenavbar.fixed {
+    margin-top: 55px;
+	min-height: 5px;
+	background-color: #20C0E8;
+}
+.sd-button{
+	margin-top: 10px;
+	padding-top: 30px;
+}
+.nav-select-button {
+	display: inline;
+	font-size: 16px;
+	text-transform: uppercase;
+    font-family: sans-serif;
+    padding-top: 6px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.nav:hover {
+	display: inline;
+	/* background-image: url("49xaJKi.gif");
+	background-position: 100%;
+	background-repeat: no-repeat; */
+	color: #21C0E8;
+	text-decoration: none;
+	opacity: 0.8;
+	border-top: 3px solid #21C0E8;
+	border-bottom: 0px;
+}
+.nav {
+	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 3px solid #21C0E8;
+	transition: color 0.1s ease-in-out 0s;
+}
+.nav-t {
+	padding-right: 50px;
+}
+/* .nav-select-button .menu .drop .drop-menu {
+	border-top: 10px;
+}
+.drop {
+	list-style: none; padding: 10px; margin: 20px;
+}
+.nav-select-button .menu {
+	display: block; position: relative; float: left; border: 0px solid #2E363F;
+}
+ul li {
+	display: none;
+}
+.drop .drop-menu a {
+	display: block; padding: inherit; text-decoration: none; white-space: nowrap;
+}
+.drop .drop-menu a:hover {
+	background: white;
+	color: #348017;
+	text-decoration: none;
+	border-bottom: 3px solid #2E363F;
+	opacity: 0.8;
+}
+li:hover ul {
+	display: block; position: relative;
+}
+li:hover li {
+	float: none;
+}
+li:hover a {
+	background: white;
+	opacity: 0.8;
+}
+ */

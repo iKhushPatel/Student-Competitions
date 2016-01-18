@@ -1,0 +1,108 @@
+<!DOCTYPE html/>
+<html>
+	<head>
+		<title>Homepage</title>
+		
+		<link href="body.css" rel="stylesheet"/>
+		
+		<style rel="stylesheet">
+			body {
+				background: white;
+				background: radial-gradient(circle, #fff 20%, #ccc);
+				background-size: cover;
+				background-attachment: scroll;
+			}
+			
+			fieldset {
+				padding-top: 20px;
+				margin-left: 80px;
+				margin-right: 100px;
+			}
+			
+			legend {
+				color: #6d6a6a !important;
+			}
+		</style>
+		
+	</head>	
+	
+	<body text="white">
+	
+		<div class="image">
+			<div class="topbar fixed">
+				<div class="span6 logo-span">
+					<a href="index.html" class="logo-cont">
+						<img class="logo" width="90" src="SC.gif" title="Student Competition" alt="Student Competition logo" align="left" onclick="window.open("");"/>
+					</a>
+					<ul class="nav-select-button">
+						<span class="nav-t"><a href="index.html" title="Go to Welcome Page" class="nav">Home</a></span>
+						<span class="nav-t"><a href="table1.html" title="Get Scholarships" class="nav">Scholarships</a></span>
+						<span class="nav-t"><a href="table2.html" title="Give Engineering Exams" class="nav">Engineering Entrance Exams</a></span>
+							<!-- <ul class="drop">
+								<li class="drop-menu"><a class="a1" href="#" title="Engineering Entrance Exams">Engineering</a></li>
+								<li class="drop-menu"><a class="a1" href="#" title="Medical Entrance Exams">Medical</a></li>
+							</ul> -->
+						<span class="nav-t"><a href="table3.html" title="Give Medical Exams" class="nav">Medical Entrance Exams</a></span>
+						<span class="nav-t"><a href="books_final.html" title="Explore Books" class="nav">Books</a></span>
+					</ul>
+				</div>
+				
+			<center>
+				<fieldset>
+					<legend class="h2"><center>Feedback Form</center></legend>
+					<form method="get" action="#">
+					<table cellspacing="20px">
+					<tr><td class="right" colspan=2><label for="first_name">First Name : </label>
+						<input type="text" id="first_name" maxlength="50" placeholder="First Name" required/>
+					<label for="last_name">Last Name : </label>
+						<input type="text" id="_name" maxlength="50" placeholder="Surname" required/></td>
+					</tr>
+					<br/><br/>
+					<tr><td class="right"><label for="email">E-mail : </label></td>
+						<td><input type="email" id="email" maxlength="32" placeholder="abc@example.com" required/></td>
+					</tr>
+					<tr><td class="right"><label for="gender">Gender : </label></td>
+					<td><input type="radio" id="gender"/>
+						<label>Male</label>
+					<input type="radio" id="gender"/>
+						<label>Female</label></td>
+					</tr>
+					<tr><td class="right"><label for="phone">Contact No. : +91 - &nbsp;</label></td>
+						<td><input type="tel" id="phone" maxlength="10" required/></td>
+					</tr>
+					<tr><td class="right"><label for="dob">Date of Birth : </label></td>
+						<td><input type="date" id="dob"/></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="rate">Satisfaction Level : </label></td>
+						<td><input type="radio" id="rate" required/><label>Excellent</label>
+							<input type="radio" id="rate" required/><label>Good</label>
+							<input type="radio" id="rate" required/><label>Average</label>
+							<input type="radio" id="rate" required/><label>Poor</label></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="comments">Comments : </label></td>
+						<td><textarea placeholder="Type in your Suggetions Here"></textarea></td>
+					</tr>
+					<tr>
+					<td colspan=2><br/></td>
+					</tr>
+					<tr>
+						<td class="center" colspan=2><button type="submit" id="sub"><label>Subscribe</label></button>
+					</tr>
+					<tr>
+						<td class="Center" colspan=2><button type="submit" id="reset"><label>Reset</label></button></td>
+					</tr>
+					</table>
+					</form>
+				</fieldset>
+			</center>
+		<div class="foot">
+			<div class="about">
+				<center>Contacts Us <br/><br/> +98786756435</center><br/>
+			</div>
+			<p class="ref">Website Designed By <a href="#">KVP Systems</a></p>
+			<br/><br/>
+		</div>
+	</body>
+</html>

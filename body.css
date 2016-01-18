@@ -1,0 +1,205 @@
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #565C68;
+	height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) url("Programmer Found by Pcbots.png") 0% 0%;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    z-index: -1;
+}
+.h2 {
+    font-size: 32px;
+    font-family: pn-bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFF99;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+	z-index:10 ;
+}
+.h2_body{
+    font-size: 20px;
+    text-align: center;
+	z-index: 10;
+}
+.std_select{
+	max-width:auto ;	
+}
+.highlight-section {
+    margin-bottom: 0px;
+}
+#home-cont {
+    position: absolute;
+    z-index: 1;
+	padding-left: 16% ;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.container, .navbar-fixed-bottom .container, .navbar-fixed-top .container, .navbar-static-top .container, .span12 {
+    width: 940px;
+}
+h1{
+	font-size:32px ;
+	color:white;
+}
+.home-count{
+	color:blue;
+}
+.last_img{
+	height:100px;
+	width:120px;
+	padding-left:125px;
+	padding-top:100px;
+	opacity: 0.7;
+}
+.w-img {
+	z-index: 1;
+}
+.h3 {
+    font-size: 22px;
+    font-family: pn-bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFF99;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+	z-index:10 ;
+	padding-top: 0px;
+}
+.schol-full {
+	opacity: 0.5;
+}
+.schol {
+	height: 250px;
+	width: 500px;
+	padding-bottom: 30px;
+}
+.schol-full .h3 {
+	text-align: left;
+}
+.exams-full {	
+	opacity: 0.8;
+	text-align: left;
+}
+.exams {
+	height: 300px;
+	width: 500px;
+	padding: 50px 0px 50px 50px;
+}
+.books-full {
+	opacity: 0.8;
+	text-align: right;
+}
+.books {
+	height: 300px;
+	width: 500px;
+	padding: 50px 50px 50px 50px;
+}
+
+.row {
+	opacity: 0.9;	
+}
+.foot{
+	color: #e3dfdf;
+	position: relative;
+    background: #323045;
+	z-index: 1001;
+	margin-top: 50px;
+	padding-top: 50px;
+	margin-left: 0px;
+	width: 100%;
+	
+	font-size: 35px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
+	z-index:10 ;
+}
+.feed {
+	color: white;
+	border: 1px solid white;
+	padding: 10px;
+	margin-right: 370px;
+	margin-left: 350px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-transform: lowercase;
+}
+.feed:hover {
+	background: white;
+	color: #323045;
+	transition: 0.5s ease;
+}
+.feed a:hover {
+	color: #323045;
+	text-decoration: none;
+}
+
+.ref {
+	padding-top: 37px;
+	color: #6d6a6a;
+	text-align: center;
+	font-size: 14px;
+}
+.ref a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+label {
+	color: #6d6a6a;
+	font-size: 20px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], textarea {
+	color: #6d6a6a;
+    border-radius: 5px;
+	padding: 10px;
+	width: 300px;
+	font-size: 20px;
+}
+
+label[for=last_name] {
+	padding-left: 50px;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+button {
+	padding: 20px;
+	border: 1px solid #6d6a6a;
+	background: transparent;
+}
+button:hover, button label:hover {
+	background: lightblue;
+	color: #6d6a6a;
+	cursor: pointer;
+}
+button:focus {
+	background: midnightblue;
+	color: black;
+	cursor: pointer;
+	border: 1px inset #6d6a6a;
+}
+#sub {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+#reset {
+	padding-left: 118px;
+	padding-right: 118px;
+}

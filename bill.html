@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Javascript Onsubmit Event Example</title>
+<link href="css/style.css" rel="stylesheet"> 
+<script>
+
+function Validate() 
+{
+
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var contact = document.getElementById("contact").value;
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+if (name != '' && email != '' && contact != '') 
+{
+	if (email.match(emailReg)) 
+	{
+		if (document.getElementById("male").checked || document.getElementById("female").checked) 
+		{
+			if (contact.length == 10) 
+			{
+				window.open("books_final.html","heifht=300,width=300");
+				return true;
+			} 
+			else 
+			{
+				alert("The Contact No. must be at least 10 digit long!");
+				return false;
+			}
+		} 
+		else 
+		{
+			alert("You must select gender.....!");
+			return false;
+		}
+	} 
+	else 
+	{
+		alert("Invalid Email Address...!!!");
+		return false;
+	}
+} 
+else 
+{
+	alert("All fields are required.....!");
+	return false;
+}
+}
+</script>
+</head>
+<body>
+<div class="container">
+<div class="main">
+<form action="#" method="post" onsubmit="return Validate()">
+	
+	<h2>Javascript Onsubmit Event Example</h2>
+	
+	<label>Name :</label>
+	<input id="name" name="name" placeholder="Name" type="text"><br><br>
+	
+	<label>Email :</label>
+	<input id="email" name="email" placeholder="Valid Email" type="text"><br><br>
+	
+	<label>Gender :</label>
+	<input id="male" name="gender" type="radio" value="Male">
+
+	<label>Male</label>
+	<input id="female" name="gender" type="radio" value="Female">
+	<label>Female</label><br><br>
+
+	<label>Contact No. :</label>
+	<input id="contact" name="contact" placeholder="Contact No." type="text">
+	<br><br>
+	<input type="submit" value="Submit" onclick="alert('Thanks for visit our Site')";>
+<span>All type of validation will execute on OnSubmit Event.</span>
+</form>
+</div>
+</div>
+</body>
+</html>

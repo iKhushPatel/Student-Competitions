@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script>
+		function call()
+		{
+			var x=confirm("Do You Want to Suscribe this Website");
+			if(x==1)
+			{
+				var i=prompt("Enter Your Email ID");
+				if(i!='@' && i!='.')
+				{
+					alert("Invalid Email ID");
+					call();
+					
+				}
+				else
+				{
+					alert("GOI IT");
+				}
+			}
+			else
+			{
+				alert("Thanks a lot");
+			}
+		};
+		var p=call();
+		if(p==1)
+		{
+			alert("Thanks a lot");
+		}
+		</script>
+	</head>
+</body>

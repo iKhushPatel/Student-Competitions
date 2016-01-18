@@ -1,0 +1,37 @@
+/*
+
+    NACONF 2012
+    
+    FOR SCREENS LARGER THAN 1200
+    
+*/
+
+
+
+/* @group BODY
+---------------------------------------------------------------------- */
+
+html{
+    font-size: 87.5%;
+}
+
+/* @end */
+
+
+
+/* @group LAYOUT
+---------------------------------------------------------------------- */
+
+div#page {
+    max-width:1400px;
+}
+
+/* HEADER ---------- */
+ /*   #branding {
+        height:130px;
+        width:275px;
+        background:url(http://2012.newadventuresconf.com/assets/images/site/branding_1200.png) no-repeat 0 0;
+    } 
+*/
+
+/* @end */

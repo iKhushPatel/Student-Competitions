@@ -1,0 +1,1568 @@
+/*
+
+    NACONF 2012
+    
+    BASE STYLES
+    
+    COLOURS -----------
+    
+        red             #bd3632
+        15% red         #f8ebea
+    
+    -------------------
+    
+*/
+
+
+
+/*@import url(reset.css);
+*/
+
+html{
+    font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #333;
+    /*width: 940px;
+    padding: 0 10px;*/
+    margin: 0 auto;
+    background: #000;
+    font-size: 87.5%;
+    /*background: url(../images/grid.png) center top repeat-y #fff;
+    */
+    word-wrap:break-word;
+    /*-webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;*/
+}
+
+/* @group BODY
+---------------------------------------------------------------------- */
+
+/*body {
+    font-family:Georgia,sans-serif;
+}
+*/
+
+/* @end */
+
+
+
+/* @group DEFAULT STYLING
+---------------------------------------------------------------------- */
+
+p,
+ul,
+dl,
+ol {
+    margin-bottom:1rem;
+}
+
+ul,
+dl,
+ol {
+    margin-left:1rem;
+}
+
+
+blockquote {
+    background:#f8ebea;
+    padding:1.333em;
+}
+blockquote p {
+    font-style:italic;
+}
+blockquote cite {
+    font-size:0.867em;
+    line-height:1.4em;
+    text-transform:uppercase;
+}
+blockquote p.cite {
+    font-style:normal;
+    margin:0;
+}
+blockquote cite p + p {
+    text-transform:none;
+    margin-left:0.8em;
+}
+
+strong {
+    font-weight:bold;
+}
+strong.footnote {
+    color:#bd3632;
+}
+
+em {
+    font-style:italic;
+}
+sup {
+    font-size: 0.7rem;
+    position: relative;
+    top: -0.5rem;
+    left: 0rem;
+}
+
+::selection {
+    background:#bd3632;
+    color:#fff;
+}
+::-moz-selection {
+    background:#bd3632;
+    color:#fff;
+}
+
+/*
+p.soldout {
+    background:#bd3632;
+    color:#fff;
+    font-family:Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    font-size:1.5em;
+    line-height:1em;
+    padding:0.2em;
+    margin-bottom:0.7em;
+}
+*/
+/* @end */
+
+
+
+/* @group HEADINGS
+---------------------------------------------------------------------- */
+
+h1,h2,h3 { 
+   /* font-family:"proxima-nova-extra-condensed-1","proxima-nova-extra-condensed-2","Arial Narrow",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+	line-height:105%;
+  */
+    -webkit-font-smoothing:subpixel-antialiased;
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 3rem;
+}
+
+h2 { 
+    font-size:1.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+}
+
+h4 {
+    
+}
+
+h5 {
+	
+}
+
+/* @end */
+
+
+
+/* @group LINKS
+---------------------------------------------------------------------- */
+
+a {
+    color:blue;
+}
+
+h1 > a{
+    color:#000; 
+}
+
+a:hover,
+a:focus {
+    color:#bd3632 !important;
+}
+
+/* @end */
+
+
+
+/* @group GENERAL LAYOUT
+---------------------------------------------------------------------- */
+
+
+
+/* @group HEADER
+---------------------------------------------------------------------- */
+div#page {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#page {
+    width:90%;
+    background: #fff;
+}
+
+#topbar{
+
+    position: fixed;
+    width:90%;
+    max-width: 1400px;
+    z-index: 100000;
+}
+
+div#header {
+    padding: 0.6875rem 1.7% 0.6875rem 1.7%;
+    overflow: hidden;
+    background-color: rgb(240, 236, 212); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(255, 255, 255)); /* Standard syntax; must be last */
+}
+
+#branding{
+
+    float:left;
+}
+
+#branding img {
+    
+    height:4rem;
+    display:inline-block;
+}
+
+#subscription{
+
+    float:right;
+    display:block;
+}
+
+.subinbox{
+    border:1px solid #D9D9D9;
+    font-size: 0.750rem;
+    padding:0.5rem;
+    color:#999;
+}
+
+.subbutton {
+    font-size: 0.8750rem;
+    padding:0.5rem;
+    color: #ffffff;
+    background-color: rgb(204,0,1); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 0px solid #ffffff;
+    -moz-box-shadow: 0px 0px 0px rgba(000,000,000,0), inset 0px 0px 0px rgba(255,255,255,0);
+    -webkit-box-shadow: 0px 0px 0px rgba(000,000,000,0), inset 0px 0px 0px rgba(255,255,255,0);
+    box-shadow: 0px 0px 0px rgba(000,000,000,0), inset 0px 0px 0px rgba(255,255,255,0);
+    text-shadow: 0px 0px 0px rgba(000,000,000,0), 0px 1px 0px rgba(255,255,255,0.3);
+    cursor: pointer;
+    display:inline;
+    margin:0rem 0rem;
+}
+
+.subbutton a{
+    color:#fff;
+}
+
+.subbutton:hover{
+    background: #cc0000;
+}
+
+#breadcrumb{
+ 
+    width: 59.57441%;
+    float: left;
+    padding: 2rem 2.1276% 0 2.1276%;
+}
+
+#cse{
+    float: right;
+    width: 29.78735%;
+    padding: 2rem 2.1276% 0 4.2552%;
+    text-align: center;
+}
+
+#fbcomments,
+#fbcomments span, 
+#fbcomments .fb_iframe_widget, 
+#fbcomments .fb_iframe_widget[style], 
+#fbcomments .fb_iframe_widget iframe[style], 
+#fbcomments iframe[style] {
+    width: 100% !important;
+}
+
+#fbcomments{
+    margin-top: 1rem;
+}
+/* @end */
+
+
+
+/* @group NAVIGATION
+---------------------------------------------------------------------- */
+
+
+ul#navigation_pri {
+    font-size: 1rem;
+    line-height: 2rem;
+    overflow: hidden;
+    background-color: rgb(204,0,1); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    margin-bottom:0rem;
+    list-style: none;
+    margin-left: 0rem;
+}
+ul#navigation_pri li {
+   border-right: 1px solid #999;
+    padding: 0 2.1276%;
+    float: left;
+    margin-left: 0rem;
+}
+
+ul#navigation_pri li:last-child {
+    border:0;
+}
+ul#navigation_pri li a {
+    color:#fff;
+    display:block;
+    text-decoration:none;
+}
+
+ul#navigation_pri li:hover,
+ul#navigation_pri li:focus {
+    background-color: rgb(185, 182, 178);
+}
+
+ul#navigation_pri li.cur {
+    background-color: rgb(80, 80, 80); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+}
+
+ul#navigation_pri li.cur a {
+    color:#fff;
+}
+ul#navigation_pri li.cur a:hover,
+ul#navigation_pri li.cur a:focus {
+    text-decoration:none;
+}
+
+ul#navigation_pri li.register {
+    float:right;
+    margin:0;
+}
+ul#navigation_pri li.register a {
+    padding:0.6818em;
+    background:#bd3632;
+    color:#fff;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ul#navigation_pri li.register a:hover,
+ul#navigation_pri li.register a:focus {
+    text-decoration:none;
+    background:#000;
+}
+ul#navigation_pri li.register.cur {
+    background-image:url(../images/site/navigation_register_cur.png);
+}
+ul#navigation_pri li.register.cur a:hover,
+ul#navigation_pri li.register.cur a:focus {
+    background:#bd3632;
+}
+
+
+ul#navigation_pri li:hover > ul{
+    display: block;
+}
+
+ul#navigation_pri li ul{
+    display: none;
+    position: absolute;
+    margin-left: -2.1276%;
+}
+
+ul#navigation_pri li ul li{
+    background-color: rgb(80, 80, 80); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    color:#fff;
+    display: block;
+    float: none;
+    width: 150%;
+}
+
+
+
+/* @end */
+
+/*
+Shadow
+********/
+.mc_shadow{
+    height:4px;
+    background: rgb(124, 123, 123);
+    /*background: -moz-linear-gradient(90deg, rgb(223, 220, 220) 0%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(223, 220, 220) 0%, rgb(255, 255, 255) 100%);
+    background: -o-linear-gradient(90deg, rgb(223, 220, 220) 0%, rgb(255, 255, 255) 100%);
+    background: -ms-linear-gradient(90deg, rgb(223, 220, 220) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(180deg, rgb(223, 220, 220) 0%, rgb(255, 255, 255) 100%);*/
+}
+
+/*
+contentarea
+--------------------------*/
+
+
+#content_wrapper{
+
+    padding-top: 7.375rem;
+    background: #fff;
+}
+
+
+.mc_leftcontent_head{
+
+    width: 59.57441%;
+    float: left;
+    padding: 2rem 2.1276% 0 2.1276%;
+    background: #fff;
+}
+
+.mc_leftcontent_head .limg{
+    display: inline;
+    float: left;
+}
+
+.mc_leftcontent_head .limg img{
+
+    width: 6.25rem;
+    height: 6rem;
+}
+
+.mc_leftcontent_head .rhead{
+
+    padding-left: 7.5rem;
+    min-height: 6rem;
+}
+
+.mc_rightcontent_head{
+
+    float: right;
+    width: 29.78735%;
+    padding: 4.5rem 2.1276% 0 4.2552%;
+    text-align: center;
+    background: #fff;
+}
+
+.mc_rightcontent_head p{
+
+    margin-bottom: 0rem;
+    line-height: 1.5rem;
+}
+
+.mc_leftcontent {
+
+    width: 59.57441%;
+    float: left;
+    padding: 1.5em 2.1276% 0 2.1276%;
+    background: #fff;
+}
+
+.mc_rightcontent{
+
+    float: right;
+    width: 29.78735%;
+    padding: 1.5em 2.1276% 0 4.2552%;
+    text-align: center;
+    background: #fff;
+}
+
+
+.mc_fullcontent {
+
+    width: 95.7448%;
+    padding: 1.5em 2.1276% 0 2.1276%;
+    background: #fff;
+}
+
+/*Social Sharing
+-----------------------------*/
+.indexsocial >div{
+    margin-top:0.5rem !important;
+    margin-bottom:1.5rem;
+    float:right;
+}
+
+.mc_socialsharing div,
+.mc_socialsharing img{
+    display:inline;
+}
+
+.mc_socialsharing div{
+    margin-right: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.mc_socialsharing {
+    margin-top:1.5rem;
+}
+
+/*Index Page
+---------------------------------*/
+#followus{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    /*display: block;*/
+}
+
+#followus ul{
+    list-style: none;
+    margin-left: 0rem;
+    margin:auto;
+}
+
+#followus ul li{
+    display:inline-block;
+    padding:1%;
+}
+
+#followus img{
+
+    width: 100%;
+    /*height:100%;*/
+}
+
+/*
+Table
+------------------------------*/
+
+#tablecontmid table{
+
+    /*border: 2px solid #000;*/
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    width: 100%;
+}
+
+
+#tablecontmid table th{
+
+    border: 1px solid #525252;
+    color: #000000;
+    padding: 0.5rem;
+    background-color: rgb(158, 158, 157); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    text-align:center;
+}
+
+#tablecontmid table td{
+
+    padding: 0.5rem;
+    border: 1px solid #525252;
+    text-align:center;
+}
+
+#tablecontmid table td:nth-child(2){
+    text-align: left;
+}
+
+#tablecontmid table tr:nth-child(odd){
+
+    background-color: rgb(235, 232, 215);
+
+}
+
+#tablecontmid table tr:nth-child(even){
+
+    background-color: #f5f5f5;
+
+}
+
+#tablecontmid table td:nth-child(1),
+#tablecontmid table td:nth-child(3),
+#tablecontmid table td:nth-child(4),
+#tablecontmid table th:nth-child(1),
+#tablecontmid table th:nth-child(3),
+#tablecontmid table th:nth-child(4){
+    display: table-cell;
+}
+
+.entry-list{
+}
+
+.entry-list ul{
+    margin-left: 0rem;
+    list-style: none;
+}
+
+.entry-list ul li{
+    padding: 1rem 0rem 1rem 0rem;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.entry-list ul li:last-child{
+    border-bottom: 0px solid #999;
+}
+
+.entry-image{
+    float:left;
+    display: block;
+}
+
+.entry-image img{
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+.entry-content{
+    margin-left: 10rem;
+    min-height: 8.5rem;
+}
+
+.entry-content h2.entry-name{
+    font-weight: 400;
+    font-size: 1.5625rem;
+    line-height: 2.25rem;
+}
+
+.entry-content h2.entry-name a{
+    color:#333;
+}
+
+
+
+.entry-content div.entry-meta{
+    color: #999;
+    padding: 0.5rem 0rem 0rem 0rem;
+    font-size:0.875rem;
+    line-height: 1rem;
+}
+
+.entry-content div.entry-meta a{
+    color: #999;
+}
+
+.entry-content div.entry-text{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#555;
+    padding-top: 1rem;
+}
+
+.lt_subhead{
+    padding: 0.4rem;
+    background: rgb(37, 37, 37);
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+/*
+Scholarship Content box
+--------------------------------------*/
+
+.mc_sc_cnt{
+    margin-bottom: 1.5rem;
+    border: 1px solid rgb(124, 123, 123);
+    box-shadow: 0 0 1px rgb(124, 123, 123);
+}
+
+.mc_sc_cnt .subhead{
+    color: #000000;
+    padding: 0 0.5rem;
+    margin-bottom: 0rem;
+    background-color: rgb(158, 158, 157); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    font-weight: bold;
+}
+
+
+/*
+.mc_sc_cnt h2{
+    color: rgb(51,51,151);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #f5f5f5;
+}*/
+
+.mc_sc_cnt > div{
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    /*margin-bottom: -1rem;*/
+}
+
+
+.mc_sc_cnt ul li, 
+.mc_sc_cnt ol li{
+    margin: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1.0rem;
+}
+
+.mc_sc_cnt table{
+    border-style: hidden;
+    width:100%;
+    margin:0%;
+}
+
+.mc_sc_cnt table td{
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #E7E7E7;
+    border-collapse:collapse;
+}
+
+.mc_sc_cnt #scdownload ul li,
+.mc_sc_cnt #implink ul li,
+.mc_sc_cnt #downloads ul li{
+    list-style: none;
+}
+
+/*
+Article Content box
+--------------------------------------*/
+.arsubhead{
+    color:#888;
+    font-size: 0.875rem;
+}
+
+.arsubhead a{
+    color:#888;
+}
+
+#article ul,
+#article ol,
+#article dl{
+    margin-left: 2rem;
+}
+
+#article ul li, 
+#article ol li,
+#article dl li{
+    margin: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1.0rem;
+}
+
+#article p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+#article {
+    color:#444;
+}
+
+/*Right bar
+-------------------------*/
+.mc_rt_blk {
+    border: 1px solid #C7C7C7;
+    margin-bottom:2rem;
+    display:block;
+}
+
+.mc_rt_blk .rt_subhead{
+    padding: 0.4rem;
+    background: rgb(37, 37, 37);
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.mc_rt_blk ul {
+    padding: 0.5rem;
+    margin: 0rem;
+    text-align: left;
+}
+
+.mc_rt_blk ul li {
+    list-style: none;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.mc_rt_blk ul li:last-child{
+
+    border-bottom: 0px solid #999;
+}
+
+.mc_rt_blk .rt_cont{
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.mc_rt_blk .rt_cont a{ 
+    color:#333;
+}
+
+.mc_rt_blk .rt_date{
+    font-size: 0.875rem;
+    color: #888;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.noborder{
+    border:0px solid;
+}
+
+
+
+.rt_entry_list{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.rt_entry_image{
+    float:left;
+}
+
+.rt_entry_image img{
+    width: 7rem;
+    height: 7rem;
+}
+
+.rt_entry_content{
+    margin-left: 8rem;
+    min-height: 7rem;
+}
+
+.rt_entry_content div.rt_entry_name{
+    font-size: 1.125rem;
+}
+
+.rt_entry_content div.rt_entry_name a{
+    color:#333;
+}
+
+
+.rt_entry_content div.rt_entry_meta{
+    font-size: 0.875rem;
+    color: #888;
+    padding: 0.5rem 0rem;
+}
+
+.rt_entry_content .rt_entry_meta a{
+    color: #888;
+}
+
+/* @group FOOTER
+---------------------------------------------------------------------- */
+
+div#footer{
+    /*margin-bottom: 10%;*/  
+    padding: 1.5rem 2.1276%;
+    background-color: rgb(240, 236, 212); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(240, 236, 212) 0%, rgb(255, 255, 255)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(255, 255, 255)); /* Standard syntax; must be last */
+}
+
+div#footer div{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+div#footer ul {
+    line-height:1.5em;
+    list-style: none;
+}
+div#footer ul li {
+    margin:0;
+    float:left;
+    border-left:1px solid #333;
+    padding:0 0.5em;
+}
+
+div#footer ul li a{
+    color:#000;
+}
+
+div#footer ul li:first-child {
+    padding-left:0;
+    border:0;
+}
+
+div#footer .lside{
+    float: left;
+}
+
+div#footer .rside{
+    float: right;
+}
+
+
+/* @end */
+
+/*Google Search engine Styles
+**************************************/
+
+  .gsc-control-cse {
+    font-family: Arial, sans-serif;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    padding:0rem !important;
+  }
+  .gsc-control-cse .gsc-table-result {
+    font-family: Arial, sans-serif;
+  }
+  input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: #D9D9D9;
+  }
+  input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    border-color: #666666;
+    background-color: rgb(204,0,1) !important;
+    background-image: none;
+    filter: none;
+  }
+  /*
+  .gsc-tabHeader.gsc-tabhInactive {
+    border-color: #FF9900;
+    background-color: #FFFFFF;
+  }
+  .gsc-tabHeader.gsc-tabhActive {
+    border-color: #E9E9E9;
+    background-color: #E9E9E9;
+    border-bottom-color: #FF9900
+  }
+  .gsc-tabsArea {
+    border-color: #FF9900;
+  }
+  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+  .gsc-webResult.gsc-result:hover, .gsc-imageResult:hover {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+  .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b  {
+    color: #0000CC;
+  }
+  .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    color: #0000CC;
+  }
+  .gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b, .gs-imageResult a.gs-title:hover, .gs-imageResult a.gs-title:hover b {
+    color: #0000CC;
+  }
+  .gs-webResult.gs-result a.gs-title:active, .gs-webResult.gs-result a.gs-title:active b, .gs-imageResult a.gs-title:active, .gs-imageResult a.gs-title:active b {
+    color: #0000CC;
+  }
+  .gsc-cursor-page {
+    color: #0000CC;
+  }
+  a.gsc-trailing-more-results:link {
+    color: #0000CC;
+  }
+  .gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {
+    color: #000000;
+  }
+  .gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+    color: #008000;
+  }
+  .gs-webResult div.gs-visibleUrl-short {
+    color: #008000;
+  }
+  .gs-webResult div.gs-visibleUrl-short  {
+    display: none;
+  }
+  .gs-webResult div.gs-visibleUrl-long {
+    display: block;
+  }
+  .gs-promotion div.gs-visibleUrl-short {
+    display: none;
+  }
+  .gs-promotion div.gs-visibleUrl-long  {
+    display: block;
+  }
+  .gsc-cursor-box {
+    border-color: #FFFFFF;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+    border-color: #E9E9E9;
+    background-color: #FFFFFF;
+    color: #0000CC;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: #FF9900;
+    background-color: #FFFFFF;
+    color: #0000CC;
+  }
+  .gsc-webResult.gsc-result.gsc-promotion {
+    border-color: #336699;
+    background-color: #FFFFFF;
+  }
+  .gsc-completion-title {
+    color: #0000CC;
+  }
+  .gsc-completion-snippet {
+    color: #000000;
+  }
+  .gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link  {
+    color: #0000CC;
+  }
+  .gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited {
+    color: #0000CC;
+  }
+  .gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover  {
+    color: #0000CC;
+  }
+  .gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active {
+    color: #0000CC;
+  }
+  .gs-promotion .gs-snippet, .gs-promotion .gs-title .gs-promotion-title-right, .gs-promotion .gs-title .gs-promotion-title-right * {
+    color: #000000;
+  }
+  .gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short  {
+    color: #008000;
+  }*/
+
+
+/**youtube embeding responsive settng**/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.partnerbanner{
+    margin-bottom: 1.5rem;
+}
+
+/** Entrance Exam **/
+.thfirst{
+    width: 90%;
+    /*border: 1px solid #525252;
+    /*color: #000000;
+    /*padding: 0.5rem;*/
+    background-color: rgb(204,0,1); /* fallback color if gradients are not supported */
+    background-image: -webkit-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(top, rgb(204,0,1) 0%, rgb(130,0,1)); /* For old Opera (11.1 to 12.0) */ 
+    background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    padding:0.5rem 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.thfirst:hover {
+    background: #cc0000 !important;
+    color:#fff !important;
+}
+
+.thsecond{
+    width: 100%;
+}
+
+.thsecond ul li{
+    border-bottom: 1px solid #525252;
+    color: #000000;
+    /*padding: 0.5rem;*/
+    background-color: rgb(235, 232, 215); /* fallback color if gradients are not supported */
+    /*background-image: -webkit-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For Chrome and Safari */
+    /*background-image:    -moz-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For old Fx (3.6 to 15) */
+    /*background-image:     -ms-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For pre-releases of IE 10*/
+    /*background-image:      -o-linear-gradient(top, rgb(158, 158, 157) 0%, rgb(124, 123, 123)); /* For old Opera (11.1 to 12.0) */ 
+    /*background-image:         linear-gradient(to bottom, 0%, rgb(130,0,1)); /* Standard syntax; must be last */
+    /*text-align:center;*/
+    padding:0.5rem 0% 0.5rem 15%;
+    cursor: pointer;
+}
+
+.thsecond ul li a:hover{
+   background: #cc0000 !important;
+   color:#fff !important;
+}
+
+.thmain > ul > li{
+    margin-bottom: 2rem;
+}
+
+.set{
+    background-color: rgb(80, 80, 80);
+    background-image: -webkit-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123));
+    background-image: -moz-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123));
+    background-image: -ms-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123));
+    background-image: -o-linear-gradient(top, rgb(80, 80, 80) 0%, rgb(124, 123, 123));
+    background-image: linear-gradient(to bottom, 0%, rgb(130,0,1));
+}
+
+.set a{
+    color:#fff;
+}
+
+/**list-style-none**/
+.list-style-none > ul > li{
+    list-style: none;
+}
+
+.list-lmargine-none > ul {
+    margin-left: 0rem;
+}
+
+.introduction{
+    margin-bottom:2rem;
+}
+
+/*
+------------------*/
+
+.tabletabone{
+    width:28%;
+    float:left;
+    padding-right: 2%;
+}
+
+.tabletabsec{
+    width:68%;
+    float:right;
+    padding-left: 2%;
+}
+
+/*
+--------------*/
+
+.subpagebody table,
+.subpagebody td,
+.subpagebody th{
+    border:1px solid #E7E7E7;
+    padding:1%;
+}
+
+.subpagebody table{
+    width: 100%;
+}
+
+/*
+---------------*/
+.recommendarticle{
+    margin-bottom: 1rem;
+}
+
+.recommendarticle .head{
+    margin-bottom: 0.5rem;
+}
+
+.recommendarticle li{
+    margin-bottom: 0.5rem;
+}
+
+/*
+------------*/
+#fixedbarbottom{
+    position: fixed;
+    bottom: 0px;
+    z-index: 10000000;
+    width: 90%;
+    background: rgb(192,0,0);
+    height: 10%;
+    max-width: 1400px;
+}
+
+#fixedbarbottom img{
+    height:100%;
+    margin: auto;
+}
+
+/* Books
+---------------------*/
+
+.bktree ul li{
+    list-style: none;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+}
+
+.bkcatbar{
+    background: rgb(204,0,1);
+    color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.bkcatbar a{
+    color: #fff;
+}
+
+.bkcatbar span{
+    float: right;
+}
+
+.bkcatimg{
+    width: 16%;
+    float: left;
+    padding: 1%;
+    background: #f8f8f8;
+    display: inline-block;
+    margin: auto 1%;
+}
+
+.bkcatimg img{
+    width:100%;
+    margin-bottom:0.5rem;
+}
+
+.bkcatimg .title{
+    margin-bottom:0.5rem;
+}
+
+.bkcatimg .author{
+    margin-bottom:0.75rem;
+}
+
+.bkcatimg .price{
+    color:rgb(204,0,1);
+}
+
+#bkdetail{
+    width:100%;
+    font-size: 1.0625rem;
+}
+
+#bkdetail #bkimg{
+    width:33%;
+    margin-right: 7%;
+    float: left;
+}
+
+#bkdetail #bkimg img{
+    width: 100%;
+}
+
+#bkdetail #bkdesc{
+    width:60%;
+    display: inline-block;
+    line-height: 2rem;
+}
+
+#isbn{
+    margin-bottom: 1rem;
+}
+
+.lowprice{
+    color: rgb(204,0,1);
+    font-size: 1.5rem;
+}
+
+#lowprice{
+    display: none;
+}
+
+#priceload{
+    font-size: 1.125rem;
+    color:rgb(204,0,1);
+}
+
+#updatebk{
+    display: none;
+    margin:1rem 0rem;
+    font-size:1rem;
+}
+
+.updatetxt{
+    display:none;
+    line-height: 1.4rem;
+}
+
+
+.bkhead{
+    font-weight: bold;
+}
+
+
+.bkcatdetail{
+    width: 98%;
+    padding: 1%;
+    background: #f8f8f8;
+    margin-bottom: 1rem;
+}
+
+.bkcatdetail .bkimg{
+    width:10%;
+    margin-right: 7%;
+    float: left;
+}
+
+.bkcatdetail .bkimg img{
+    width: 100%;
+}
+
+.bkcatdetail .bkdesc{
+    width:83%;
+    display: inline-block;
+    line-height: 2rem;
+}
+
+table#pricedetail{
+    width:100%;
+    font-size: 1.0625rem;
+    display: none;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+table#pricedetail td{
+    width:33%;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border: 1px solid #525252;
+    text-align:center;
+}
+
+table#pricedetail th{
+    width:100%;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border: 1px solid #525252;
+    text-align:center;
+}
+
+table#pricedetail tr:nth-child(1){
+
+    background-color: rgb(235, 232, 215);
+
+}
+
+
+table#pricedetail tr{
+
+    background: #fff;
+
+}
+
+
+#pricedetail img{
+    width:100%;
+}
+
+.bkgap{
+    margin-top: 2rem;
+}
+
+.bkheading{
+    background-color: rgb(235, 232, 215);
+    padding: 0.5rem;
+    border: 1px solid #525252;
+    text-align:center;
+    margin-bottom: 0.5rem;
+}
+
+.bktabone{
+    width:15%;
+    float:left;
+    padding:0 2% 0 0;
+    background: #f8f8f8;
+    margin-bottom: 1rem;
+}
+
+.bktabsec{
+    width:81%;
+    float:right;
+    padding: 0 0 0 2%;
+}
+
+.searchtool{
+    background: rgb(255, 122, 0);
+}
+
+.searchtool div:nth-child(1){
+    float: left;
+    /* display: inline-block; */
+    width: 30%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.searchtool div:nth-child(2){
+    display: inline-block;
+    width: 60%;
+}
+
+.searchtool input{
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 0px solid lightgrey;
+    font-family: inherit;
+    /* margin-bottom: 1rem; */
+    line-height: 1rem;
+    margin: 0rem;
+}
+
+.searchtool div:nth-child(3){
+    display: inline-block;
+    width: 9%;
+    border: 1px solid;
+    /* padding: 0.5rem 0.75rem; */
+    text-align: center;
+    padding: 0.3rem 0;
+    cursor:pointer;
+    margin:0;
+}
+
+.searchtool div:nth-child(3):hover{
+    background: #bd3632 !important;
+}
+
+.searchdata{
+    background: rgb(235, 232, 215);
+    width: 100%;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+#spinner{
+    margin:auto;
+    width:10%;
+    display: none;
+}
+
+#spinner img{
+    width: 100%;
+}
+
+#bkspinner{
+    margin:auto;
+    width:10%;
+    display: none;
+}
+
+#bkspinner img{
+    width: 100%;
+}
+
+#bkerrbox{
+    text-align: center;
+    color:rgb(204,0,1);
+    margin-bottom: 1rem;
+    padding:0.5rem;
+    display: none;
+}
+
+.bkmrimg{
+    width: 25%;
+    float: left;
+    padding: 2%;
+    background: #f8f8f8;
+    display: inline-block;
+    margin: auto 2%;
+}
+
+.bkmrimg img{
+    width:100%;
+    margin-bottom:0.5rem;
+}
+
+.bkmrimg .title{
+    margin-bottom:0.5rem;
+}
+
+.bkmrimg .author{
+    margin-bottom:0.75rem;
+}
+
+.bkmrimg .price{
+    color:rgb(204,0,1);
+}
+
+
+/*.....*/
+.adaftbcrumb{
+
+    width: 59.57441%; 
+    float: left; 
+    padding: 0.2rem 2.1276% 0rem 2.1276%;
+
+}
+
+/*...*/
+.contactus_left{
+    float:left;
+    width:50%;
+}
+
+.contactus_right{
+    float:right;
+    width:40%;
+    padding-right:10%;
+}
+
+
+.cntform input{
+    width:60%;
+    height:1.5rem;
+    margin-top:0.25rem;
+    color:#999;
+}
+
+.cntform textarea{
+    width:60%;
+    height:10rem;
+    margin-top:0.25rem;
+    color:#999;
+}
+
+.cntthanks{
+    display: none;
+}
+
+.cntsend{
+    float:right;
+    width:50%;
+}
+

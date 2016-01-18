@@ -1,0 +1,60 @@
+#sd-in-btn {
+    height:25px;
+	width:40px;
+	border-radius: 5px 20px 5px 20px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 10px;
+    color: #565C68;
+	padding-top: 0px;
+	background: white;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+.btn-inverse {
+	border-radius: 0px 0px 0px 0px;
+    background-color: #21C0E8;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	height:1px;
+	background: white;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+
+
+.search_button{
+	height:50px;
+	width:40px;
+	border-radius: 5px 20px 5px 20px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #565C68;
+	background: white;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+	
+}
+.std_select{
+	height:35px;
+	border-radius: 5px 20px 5px 20px;
+	width:20em;
+	padding:10px;
+	font-size:18px;
+	background: white;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
+
+.suscribe_button{
+	height:50px;
+	width:40px;
+	border-radius: 5px 20px 5px 20px;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #565C68;
+	background: white;
+	box-shadow: 0px 4px #9da853;
+	color: #888e5f;
+}
